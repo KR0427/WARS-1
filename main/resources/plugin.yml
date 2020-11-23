@@ -1,0 +1,31 @@
+name: WARS
+version: ${project.version}
+main: keizaiya.wars.WARS
+api-version: 1.16
+
+commands:
+  country:
+    description: "国関連の処理に関するコマンド"
+    usage: /<command>
+  menu:
+    description: "メニューにかかわるコマンド"
+    usage: /<command>
+
+  test:
+    description: "テストコマンド(プラグイン開発用)"
+    usage: /<command>
+    permission: inferno.admin
+    permission-message: "これは管理者が使うコマンドです。よく見つけたね^^"
+  admin:
+    description: "テストコマンド(プラグイン開発用)"
+    usage: /<command>
+    permission: inferno.WARSAdmincommand
+    permission-message: "これは管理者が使うコマンドです。よく見つけたね^^"
+  chatmode:
+    description: "チャットモード切替"
+    usage: /<command>
+
+permissions:
+  inferno.WARSAdmincommand:
+    description: "adminコマンドの権限です"
+    default: op

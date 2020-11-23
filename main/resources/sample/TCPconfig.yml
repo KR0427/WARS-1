@@ -1,0 +1,17 @@
+#サーバーアドレス
+ServerAdd: "192.168.10.145"
+#サーバーポート
+Serverpoat: 42732
+
+#起動するかどうか
+enable: True
+
+#アカウント
+account: "test"
+#パスワード
+pass: "test"
+
+#bot
+bot:
+  - "discord_BOT_for_POTATO_WARS"
+6

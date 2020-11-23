@@ -1,0 +1,85 @@
+#使用するフォルダ名
+Filename: "WARS"
+chanksize: 8
+invitelimit: 60 #単位 s
+TileAttacklimit: 10 #単位 s
+wartime: 30  #単位 min
+chankX: 0
+chankZ: 0
+
+NotBreak:
+  - "CHEST"
+  - "TRAPPED_CHEST"
+  - "DISPENSER"
+  - "DROPPER"
+  - "FURNACE"
+  - "BARREL"
+  - "GOLD_ORE"
+  - "IRON_ORE"
+  - "COAL_ORE"
+  - "LAPIS_ORE"
+  - "DIAMOND_ORE"
+  - "REDSTONE_ORE"
+  - "EMERALD_ORE"
+  - "NEZER_QUARTZ_ORE"
+  - "LAVA_BUCKET"
+  - "WATER_BUCKET"
+  - "BEACON"
+  - "TNT"
+  - "FLINT_AND_STEEL"
+
+DERETEITEM:
+  - "ELYTRA"
+  - "TOTEM_OF_UNDYING"
+  - "NETHERITE_HELMET"
+  - "NETHERITE_CHESTPLATE"
+  - "NETHERITE_LEGGINGS"
+  - "NETHERITE_BOOTS"
+  - "NETHERITE_INGOT"
+  - "NETHERITE_SCRAP"
+
+
+#--------------------------------------------------
+#TABに書ける文字変数
+#  %Mmax% : メモリーの最大値
+#  %Muse% : メモリーの使用量
+#  %Mdef% : メモリー標準表示 [Memory %Muse% MB / %Mmax% MB]
+#  %TPS% : サーバーのTPS
+#  %ping% : プレイヤーのピングを表示
+#  %player% : プレイヤー名
+#  %country% : 国名
+#  %chat% : 現在のチャットモード
+#  & : §に変換します
+#--------------------------------------------------
+
+#TAB
+#プレイヤーリスト上
+
+Header:
+  - "&e経済屋"
+  - "&bTPS: &a%TPS% ping: &e%ping%ms"
+
+#プレイヤーリスト下
+
+Footer:
+  - "&7%Mdef%"
+  - "&e国名: %country%"
+  - "&3chatmode: %chat%"
+
+
+#TPSrate (int)
+# レート（tick）間の平均になります default : 10
+TPSrate: 100
+
+
+#updateTick (int) default : 2
+updatetick: 2
+
+#TPScolorchenge default : True
+Tcolor: True
+Hi: "&a"
+half: "&e"
+low: "&c"
+#TPSが15以下になった時のログを取得します。（プレイヤー名、座標）　default: True
+Log: True
+WARS: True
